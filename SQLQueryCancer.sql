@@ -1,4 +1,4 @@
--- This dataset was pulled from data.world. The information in the dataset shows the cancer rate by U.S. states in 1999-2013. 
+-- This dataset was pulled from data.world and uploaded to SSMS. The information in the dataset shows the cancer rate by U.S. states in 1999-2013. 
 --The rates represents the number out of 100,000 people who developed or died from cancer each year.
 -- Incidence table represents the number of people who got Cancer.
 
