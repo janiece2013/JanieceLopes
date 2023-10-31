@@ -1,5 +1,4 @@
-
--- This dataset was pulled from data.world
+-- This dataset was pulled from data.world and uploaded to SSMS
 --This dataset represents ebola cases reported from AUGUST 2014 TO MARCH 2016
 --I will be answering questions regarding the information in the dataset
 
