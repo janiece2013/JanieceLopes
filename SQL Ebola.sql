@@ -18,12 +18,16 @@ SELECT ROUND(SUM(value),0)
 FROM dbo.ebola_data_db_format;
 
 
---What is the country with the largest number of Ebola cases? Sierra Leone had the largest amount of Ebola Cases.
---14,122 cases were reported. 
-SELECT Country, MAX(value) As 'Number of cases'
+--What is the country with the largest number of Ebola cases? Sierra Leone had the largest amount of Ebola Cases. 
+SELECT Country, COUNT(value)
 FROM dbo.ebola_data_db_format
 GROUP BY Country
-ORDER by 'Number of cases' DESC;
+ORDER by COUNT(value) DESC;
+
+-- Number of cases reported in Sierra Leone? There were 7,832,148 cases.
+SELECT SUM(VALUE)
+FROM dbo.ebola_data_db_format
+WHERE Country = 'Sierra Leone';
 
 --How many cases have been reported in the United States? There were 1,932 cases reported in the United States.
 SELECT COUNT(value) AS 'Number of cases', Country
